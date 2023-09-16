@@ -13,6 +13,12 @@ var rains = []
 var ripples = []
 function animate() {
     requestAnimationFrame(animate)
+
+    if (window.scrollY - window.innerHeight > 0) {
+        document.getElementById("btt").style.opacity = 1
+    } else {
+        document.getElementById("btt").style.opacity = 0
+    }
     ctx.clearRect(0, 0, canvas.width, canvas.height)
 
     // ctx.fillStyle = "rgba(0, 0, 0, 0.1)"
