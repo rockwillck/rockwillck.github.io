@@ -1,0 +1,184 @@
+:root {
+	--gradient-one: #1f2758;
+	--gradient-two: #0f101c;
+}
+@media (prefers-color-scheme: light) {
+	:root {
+		--gradient-one: #e66465;
+		--gradient-two: #9198e5;
+	}
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		--gradient-one: #1f2758;
+		--gradient-two: #0f101c;
+	}
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 20px;
+}
+
+body {
+	font-family: 'Rajdhani', sans-serif;
+	color: white;
+}
+
+canvas {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left:0;
+	top:0;
+	background: linear-gradient(var(--gradient-one), var(--gradient-two));
+	background-size: cover;
+	z-index: -1;
+}
+
+.cover {
+	position: absolute;
+	left:50%;
+	top:50%;
+	translate: -50% -50%;
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	padding:0 20px 0 20px;
+	margin: 5px 5px 5px 5px;
+	box-sizing: border-box;
+	border-radius: 30px;
+	width: fit-content;
+	height: fit-content;
+}
+.cover h1 {
+	font-size: 10vmin;
+}
+.cover a {
+	font-size: 5vmin;
+	font-style: italic;
+	display: block;
+	transition: 0.2s;
+	background:linear-gradient(to right, white 0%, white 50%, transparent 50%, transparent 100%);
+	background-size: 200% 100%;
+	background-position: 100%;
+	text-decoration: none;
+	color: white;
+}
+.cover a:hover {
+	background-color: white;
+	color:black;
+	background-position:0%;
+	padding:10px;
+}
+
+h1 {
+	border-bottom: solid;
+}
+
+.content {
+	position: absolute;
+	top:100%;
+	background: linear-gradient(var(--gradient-two), var(--gradient-one) 40%);
+	width:100%;
+	left:0;
+	padding:10px;
+	box-sizing:border-box;
+	text-align: center;
+}
+
+h2 {
+	font-size: 50px;
+}
+
+.project {
+	width:100%;
+	height:300vh;
+}
+.sheet {
+	width:90vw;
+	height:90vh;
+	position:sticky;
+	left:5vw;
+	top:5vh;
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border-radius: 30px;
+	background-color: rgba(255,255, 255, 0.1);
+	overflow: auto;
+	margin:50px 0 50px 0;
+}
+.set {
+	display: flex;
+	height:100%;
+}
+.set.art {
+	flex-direction: row;
+}
+@media (orientation:portrait) {
+	.set.art {
+		flex-direction: column;
+	}
+}
+.left, .right {
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.left {
+	flex:1;
+	text-align: left;
+	padding:0 30px 0 30px;
+	box-sizing: border-box;
+}
+.right {
+	text-align: left;
+}
+img {
+	max-width:100%;
+	max-height:100%;
+	width: auto;
+	height: auto;
+}
+
+.left h3 {
+	font-size: 50px;
+	margin:0;
+}
+.left a {
+	color:white;
+}
+.art {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.year {
+	background-color: white;
+	padding:10px;
+	font-style: italic;
+	width: fit-content;
+	color:black;
+}
+
+footer {
+	position: fixed;
+	bottom:0;
+}
+.right.art {
+	padding:10px;
+	box-sizing: border-box;
+	flex:1;
+	max-height: 50vh;
+}
+
+.left.writing {
+	flex:3;
+}
+.right.writing {
+	flex:1;
+	padding:10px;
+}
+img {
+	border-radius: 30px;
+}
