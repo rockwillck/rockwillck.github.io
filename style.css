@@ -161,10 +161,6 @@ img {
 	color:black;
 }
 
-footer {
-	position: fixed;
-	bottom:0;
-}
 .right.art {
 	padding:10px;
 	box-sizing: border-box;
@@ -181,4 +177,11 @@ footer {
 }
 img {
 	border-radius: 30px;
+}
+
+footer {
+	position:fixed;
+	bottom:0;
+	left:0;
+	padding:10px;
 }
