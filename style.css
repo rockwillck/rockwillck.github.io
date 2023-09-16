@@ -1,17 +1,22 @@
 :root {
 	--gradient-one: #1f2758;
 	--gradient-two: #0f101c;
+	--font-color: white;
 }
 @media (prefers-color-scheme: light) {
 	:root {
-		--gradient-one: #e66465;
+		--gradient-one: #cdd0f6;
 		--gradient-two: #9198e5;
+		--font-color: rgb(0, 0, 0);
+		--accent-color:rgba(255, 255, 255, 0.7);
 	}
 }
 @media (prefers-color-scheme: dark) {
 	:root {
 		--gradient-one: #1f2758;
-		--gradient-two: #0f101c;
+		--gradient-two: #181a2c;
+		--font-color: white;
+		--accent-color:rgba(255, 255, 255, 0.1);
 	}
 }
 
@@ -21,7 +26,7 @@ html {
 
 body {
 	font-family: 'Rajdhani', sans-serif;
-	color: white;
+	color:var(--font-color);
 }
 
 canvas {
@@ -61,7 +66,7 @@ canvas {
 	background-size: 300% 100%;
 	background-position: 100%;
 	text-decoration: none;
-	color: white;
+	color: var(--font-color);
 }
 .cover a:hover {
 	background-color: white;
@@ -109,7 +114,7 @@ h2 {
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
 	border-radius: 30px;
-	background-color: rgba(255,255, 255, 0.1);
+	background-color: var(--accent-color);
 	overflow: auto;
 	margin:50px 0 50px 0;
 }
@@ -166,7 +171,7 @@ img {
 	margin:0;
 }
 .left a {
-	color:white;
+	color:var(--font-color);
 }
 .art {
 	display:flex;
@@ -215,7 +220,7 @@ footer {
 	background-color: transparent;
 	border: solid;
 	border-radius: 100%;
-	color: white;
+	color: var(--font-color);
 	width:50px;
 	height:50px;
 	z-index: 3;
@@ -237,7 +242,7 @@ footer {
 
 .techs li {
 	display: inline-block;
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: var(--accent-color);
 	margin-bottom:5px;
 	padding: 5px;
 	border-radius: 10px;
@@ -285,7 +290,7 @@ footer {
 .tocEl {
 	background-color: transparent;
 	border: solid;
-	border-color: white;
+	border-color: var(--font-color);
 	border-radius: 100%;
 	width:10px;
 	height: 10px;
@@ -295,5 +300,5 @@ footer {
 	transition: 0.2s;
 }
 .tocEl.active {
-	background-color: white;
+	background-color: var(--font-color);
 }
