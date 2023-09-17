@@ -305,9 +305,10 @@ footer {
 }
 
 .social {
-	width:40px;
+	height:40px;
 	margin-right: 10px;
 	transition: 0.2s;
+	border-radius: 100%;
 }
 .social:hover {
 	rotate:30deg;
@@ -323,4 +324,16 @@ footer {
 
 .socials {
 	display: flex;
+	align-items: center;
+}
+
+.comm {
+	color: var(--font-color);
+	display: inline-block;
+	border:solid;
+	border-width: 1px;
+	border-radius: 100vmin;
+	padding: 10px;
+	box-sizing: border-box;
+	text-decoration: none;
 }
