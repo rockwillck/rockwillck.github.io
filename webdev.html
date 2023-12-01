@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>William Choi-Kim | Portfolio</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta name="description" content="Professional portfolio of William Choi-Kim, developer, writer, artist." />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="icon" href="favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+</head>
+<body onresize="resized()">
+    <canvas id="canvas"></canvas>
+	<div class="cover" id="cover">
+		<div class="socials">
+			<a class="social" href="https://github.com/rockwillck" target="_blank" rel="noopener noreferrer"><img src="static/images/github.png" alt="Github"></a>
+			<a class="social" href="mailto:williamck@rockwill.dev"><img src="static/images/email.png" alt="email"></a>
+			<a class="comm" href="https://www.rockwill.dev/commissions/"><span>Commissions</span></a>
+		</div>
+		<h1>William Choi-Kim</h1>
+        <a href="/" class="backLink">< Back</a>
+        <sub>Web Developer</sub>
+        <p>With extensive expertise in front-end optimization and serverless hosting, I can get your website created - efficiently and cleanly - in a matter of days.</p>
+	</div>
+    <div class="toc" id="toc">
+    </div>
+    <button class="backToTop" id="btt" onclick="window.scrollTo(0, 0)">↑</button>
+    <div class="content" id="content">
+        <h2 id="frontEnd">Front End</h2>
+        <div class="project">
+            <div class="sheet">
+                <div class="set">
+                    <div class="left">
+                        <h3>HanguLingo</h3>
+                        <p class="year">2023</p>
+                        <a href="https://hangulingo.rockwill.dev/">https://hangulingo.rockwill.dev/</a>
+                        <p>A Korean language learning tool with a website and accompanying iOS app built with React Native.</p>
+                        <ul class="techs">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React Native</li>
+                            <li>Expo</li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <img src="static/images/hangu.png" alt="Screenshot of HanguLingo.">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="sheet">
+                <div class="set">
+                    <div class="left">
+                        <h3>College Resume</h3>
+                        <p class="year">2023</p>
+                        <a href="https://rishilol.github.io/cv/">https://rishikoduri.com</a>
+                        <p>An online resume built for colleges using vanilla CSS and JS.</p>
+                        <ul class="techs">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Canvas API</li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <img src="static/images/cv.png" alt="Screenshot of a college resume.">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="sheet">
+                <div class="set">
+                    <div class="left">
+                        <h3>Tidbit</h3>
+                        <p class="year">2023</p>
+                        <a href="https://www.rockwill.dev/Tidbit/">https://www.rockwill.dev/Tidbit/</a>
+                        <p>A minimalistic browser-based text editor with session support and persistent local storage.</p>
+                        <ul class="techs">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>LocalStorage API</li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <img src="static/images/tidbit.png" alt="Screenshot of a text editor.">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="sheet">
+                <div class="set">
+                    <div class="left">
+                        <h3>msg stories</h3>
+                        <p class="year">2023</p>
+                        <a href="https://www.rockwill.dev/msg-stories/">https://www.rockwill.dev/msg-stories/</a>
+                        <p>A modern, clean ui for a collection of AI generated short stories, conveyed through text messages.</p>
+                        <ul class="techs">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>GPT 3.5</li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <img src="static/images/msgs.png" alt="Screenshot of a message stories.">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="sheet">
+                <div class="set">
+                    <div class="left">
+                        <h3>RT3dMetaballs</h3>
+                        <p class="year">2023</p>
+                        <a href="https://www.rockwill.dev/RT3dMetaballs/">https://www.rockwill.dev/RT3dMetaballs/</a>
+                        <p>An experimental, bleeding-edge look into using web workers in software rendering.</p>
+                        <ul class="techs">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>WebWorkers</li>
+                            <li>Canvas API</li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <img src="static/images/metaballs.png" alt="Screenshot of a metaballs implementation in the browser.">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2>Back End</h2>
+        <div class="project">
+            <div class="sheet">
+                <div class="set">
+                    <div class="left">
+                        <h3>Secretio.net</h3>
+                        <p class="year">2022</p>
+                        <a href="https://www.secretio.net/">https://www.secretio.net/</a>
+                        <p>An anonymous secret sharing site with IP blocking and a custom database implementation.</p>
+                        <ul class="techs">
+                            <li>Python</li>
+                            <li>Flask</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <img src="static/images/secretio.png" alt="Screenshot of an anonymous secret sharing service.">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="sheet">
+                <div class="set">
+                    <div class="left">
+                        <h3>Luka</h3>
+                        <p class="year">2021</p>
+                        <a href="https://luka.sparkplug.page/">https://luka.sparkplug.page/</a>
+                        <p>A legacy Discord integration with over 80,000 users in 300+ communities.</p>
+                        <ul class="techs">
+                            <li>Python</li>
+                            <li>Discord.py</li>
+                            <li>Flask</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <img src="static/images/luka.png" alt="Page of Luka, a Discord integration.">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer><small>
+        © <script>document.write(new Date().getFullYear())</script> William Choi-Kim. All Rights Reserved.
+    </small></footer>
+    <script src="scroll.js"></script>
+    <script src="home.js"></script>
+</body>
