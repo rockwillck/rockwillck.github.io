@@ -311,10 +311,13 @@ footer {
 
 .social {
 	height: 15vmin;
+	width: 15vmin;
 	max-height: 40px;
+	max-width: 40px;
 	margin-right: 10px;
 	transition: 0.2s;
 	border-radius: 100%;
+	background-color: transparent;
 }
 .social:hover {
 	rotate:30deg;
