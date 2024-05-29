@@ -15,10 +15,7 @@ function animate() {
     requestAnimationFrame(animate)
     ctx.clearRect(0, 0, canvas.width, canvas.height)
 
-    // ctx.fillStyle = "rgba(0, 0, 0, 0.1)"
-    // ctx.fillRect(0, canvas.height*0.8, canvas.width, canvas.height*0.2)
-
-    ctx.strokeStyle = "rgb(200, 200, 255)"
+    ctx.strokeStyle = "white"
     rainOffsets = [-2, 5]
     rains.forEach((rain, index) => {
         ctx.beginPath()
@@ -34,7 +31,6 @@ function animate() {
             ripples.push([rain[0], rain[1], 0, rain[2] - 1])
         }
     })
-    ctx.strokeStyle = "white"
     ripples.forEach((ripple, index) => {
         ctx.beginPath()
         ctx.arc(ripple[0], ripple[1], ripple[2], 0, 2*Math.PI)

@@ -5,10 +5,10 @@
 }
 @media (prefers-color-scheme: light) {
 	:root {
-		--gradient-one: #cdd0f6;
-		--gradient-two: #9198e5;
-		--font-color: rgb(0, 0, 0);
-		--accent-color:rgba(255, 255, 255, 0.7);
+		--gradient-one: #d68f55;
+		--gradient-two: #de572d;
+		--font-color: rgb(2, 2, 2);
+		--accent-color:rgba(249, 226, 197, 0.7);
 	}
 }
 @media (prefers-color-scheme: dark) {
@@ -68,7 +68,7 @@ sub {
 	font-size: 5vmin;
 	font-style: italic;
 	display: block;
-	transition: 0.2s;
+	transition: 0.5s;
 	background:linear-gradient(to right, white 0%, white 50%, transparent 50%, transparent 100%);
 	background-size: 300% 100%;
 	background-position: 100%;
@@ -76,7 +76,6 @@ sub {
 	color: var(--font-color);
 }
 .sectionLink:hover {
-	background-color: white;
 	color:black;
 	background-position:0%;
 	padding:10px;
@@ -183,6 +182,9 @@ img {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+}
+.left.art {
+	align-items: start;
 }
 .year {
 	background-color: white;
