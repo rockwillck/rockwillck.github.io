@@ -2,48 +2,121 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	<title>William Choi-Kim | Portfolio</title>
+	<title>William Choi-Kim</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<meta name="description" content="Professional portfolio of William Choi-Kim, developer, writer, artist." />
+	<meta name="description" content="webdev, writer, artist" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
-	<link rel="icon" href="favicon.png">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+	<link rel="icon" href="assets/imgs/icon.png">
 </head>
-<body onresize="resized()">
-	<canvas id="canvas"></canvas>
-	<div class="cover" id="cover">
-		<div class="socials">
-			<a class="social" href="https://github.com/rockwillck" target="_blank" rel="noopener noreferrer"><img src="static/images/github.png" alt="Github"></a>
-			<a class="social" href="mailto:williamck@rockwill.dev"><img src="static/images/email.png" alt="email"></a>
-			<a class="comm" href="https://www.rockwill.dev/commissions/"><span>Commissions</span></a>
-		</div>
-		<h1>William Choi-Kim</h1>
-		<a href="webdev.html" class="sectionLink">Full-stack Web Developer</a>
-		<a href="writing.html" class="sectionLink">Award-winning Writer</a>
-		<a href="art.html" class="sectionLink">3D Artist</a>
+<body>
+	<canvas id="bg"></canvas>
+	<div class="hero">
+		<h1>
+			William <i>Choi-Kim</i>
+		</h1>
+		<p>webdev, writer, artist</p>
 	</div>
-	<div class="content" id="content">
-		<div class="introSection">
-			<h2>About Me</h2>
-			<p>Nearly a decade ago, on a train with nothing to do, I picked up a little program called Hopscotch. It's still around today - a polished version of Scratch for iPad, designed to introduce kids to programming.</p>
-			<p>I was hooked.</p>
-			<p>Now, I make websites using HTML, JS, CSS, and sometimes, when I'm feeling spicy, React. I leverage serverless architecture to create cheap to maintain, SEO friendly static sites - I've created CVs, resume sites, portfolios, and more for a litany of satisfied clients.</p>
-		</div>
-		<div class="introSection">
-			<h2>Writing and Art</h2>
-			<p>But though I'm most at home in front of my computer, cranking out beautiful websites, I'm not opposed to the occasional writing piece or artwork.</p>
-			<p>I'm a Scholastic Art and Writing National alumnus, a published author, and a 3d artist.</p>
-		</div>
-		<div class="introSection">
-			<h2>Learn More</h2>
-			<p>You can contact me at <a href="mailto:williamck@rockwill.dev">williamck@rockwill.dev</a> or message me on social media platforms @rockwill. To commission me, visit <a href="https://www.rockwill.dev/commissions/">https://www.rockwill.dev/commissions/</a>. Cheers!</p>
-		</div>
+	<div class="content">
+	<div>
+		<h2>About Me</h2>
+		<p>I make art and write. On occasion, I code. I like making cool things that look pretty, but also dumb things that kinda work. This website is a collection of the cool and dumb things I've done over the years.</p>
+		<h2>Projects</h2>
+		<p>A few recent projects that I like.</p>
+		<ul class="projects">
+			<li data-ss="assets/imgs/sdb.png"><a href="writeups/smilesdb.html">
+					<h3>SmilesDB</h3>
+					<p class="tag">Database</p>
+					<p class="tag">Bioinformatics</p>
+			</a></li>
+			<li data-ss="assets/imgs/hwa.jpg"><a href="writeups/hwalgi.html">
+					<h3>Hwalgi / Pine</h3>
+					<p class="tag">Blog</p>
+					<p class="tag">Branding</p>
+			</a></li>
+			<li data-ss="assets/imgs/cnl.png"><a href="writeups/cnl.html">
+				<h3>Crafts and Laughs</h3>
+				<p class="tag">Website</p>
+				<p class="tag">Nonprofit</p>
+			</a></li>
+			<li data-ss="assets/imgs/es.png"><a href="writeups/es.html">
+				<h3>Empty Streets</h3>
+				<p class="tag">Webdev</p>
+				<p class="tag">Nonprofit</p>
+				<p class="tag">Branding</p>
+			</a></li>
+		</ul>
+		<h2>Writing</h2>
+		<ul class="projects">
+			<li><a href="https://www.hwalgi.org/article.html?0">
+					<h3>Fukushima Isn't About the Environment</h3>
+					<p class="tag">Essay</p>
+					<p class="tag">2023</p>
+			</a></li>
+			<li><a href="https://www.hwalgi.org/article.html?1">
+					<h3>Affirmative Action Ended the Wrong Way</h3>
+					<sub>Scholastic Gold Key&nbsp;</sub>
+					<p class="tag">Essay</p>
+					<p class="tag">2023</p>
+			</a></li>
+			<li><a href="https://www.hwalgi.org/article.html?3">
+					<h3>The Power of Popcorn</h3>
+					<p class="tag">Essay</p>
+					<p class="tag">2023</p>
+			</a></li>
+			<li><a href="https://www.hwalgi.org/article.html?2">
+					<h3>Artificial Intelligence Isn't Really a Problem</h3>
+					<p class="tag">Essay</p>
+					<p class="tag">2023</p>
+			</a></li>
+			<li><a href="writeups/jericho.html">
+					<h3>Jericho and Dwejimi</h3>
+					<sub>Scholastic Silver Key&nbsp;</sub>
+					<p class="tag">Dramatic Script</p>
+					<p class="tag">2023</p>
+			</a></li>
+			<li><a href="https://vocal.media/fiction/mares">
+					<h3>Mares</h3>
+					<p class="tag">Short Story</p>
+					<p class="tag">2023</p>
+			</a></li>
+		</ul>
+		<p>More (less refined) writing dating back to 2018 can be found <a href="https://sites.google.com/view/williamwritingportfolio/home">here</a>.</p>
+		<h2>Art</h2>
+		<ul class="projects">
+			<li data-ss="assets/imgs/gyeongju.png"><a href="writeups/gyeongju.html">
+					<h3>Gyeongju Postcard</h3>
+					<p class="tag">Blender</p>
+					<p class="tag">3D</p>
+			</a></li>
+			<li data-ss="assets/imgs/spring.png"><a href="writeups/spring.html">
+					<h3>Spring</h3>
+					<p class="tag">Blender</p>
+					<p class="tag">3D</p>
+			</a></li>
+			<li data-ss="assets/imgs/grandness.png"><a href="writeups/grandness.html">
+					<h3>Grandness</h3>
+					<sub>Scholastic Regional Honorable Mention</sub>
+					<p class="tag">Blender</p>
+					<p class="tag">3D</p>
+			</a></li>
+		</ul>
+		<p>More art can be found on my <a href="https://www.instagram.com/rockwillybilly/">Instagram</a> and files can be purchased on my <a href="https://buymeacoffee.com/rockwill">Buy Me a Coffee</a>.</p>
+		<h2>Online Presence</h2>
+		<ul class="projects">
+			<li data-ss="assets/imgs/github.png"><a href="https://github.com/rockwillck/">
+					<h3>Github</h3>
+			</a></li>
+			<li><a href="mailto:williamck@rockwill.dev">
+					<h3>Email</h3>
+			</a></li>
+			<li><a href="https://sparkplug.page">
+					<h3>Commission</h3>
+			</a></li>
+		</ul>
 	</div>
-    <footer><small>
-        © <script>document.write(new Date().getFullYear())</script> William Choi-Kim. All Rights Reserved.
-    </small></footer>
-    <script src="home.js"></script>
+	<footer><small>© <script>document.write(new Date().getFullYear())</script> William Choi-Kim. All Rights Reserved.</small></footer>
+	</div>
+	<img id="hover">
+	<script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Hwalgi/Pine | William Choi-Kim</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta name="description" content="webdev, writer, artist" />
+	<link rel="stylesheet" type="text/css" href="../style.css" />
+	<link rel="icon" href="../assets/imgs/icon.png">
+</head>
+<body>
+	<div class="content">
+	<div>
+        <a href="/">Home</a>
+		<h1>Hwalgi/Pine</h1>
+        <p>Empowering student voices</p>
+        <a href="https://hwalgi.org">hwalgi.org</a>
+        <a href="https://pine.hwalgi.org">pine.hwalgi.org</a>
+        <img class="preview" src="../assets/imgs/hwa.jpg">
+        <img class="preview" src="../assets/imgs/pin.png">
+		<h2>Motivation</h2>
+        <p>Hwalgi is a nonprofit that publishes student essays in order to amplify younger representation in modern discourse.</p>
+		<h2>Technical Details</h2>
+		<p>Hwalgi is submission based, so I used Google Forms and Google Sheets (rewriting the frontend for Google Forms to send POST requests to the Google endpoint) to collect submissions. They are then manually reviewed, and the site scrapes the published spreadsheet periodically to get updates.</p>
+		<p>Pine is not submission based, so it uses a Python script and Github Actions to convert a custom markdown-like file format to templated HTML on commit.</p>
+		<h2>Challenges</h2>
+		<p>Finding brand unity between the two sites without making them indistinguishable was an interesting exercise in what to keep and what to change.</p>
+	</div>
+</body>
+</html>

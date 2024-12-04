@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>SmilesDB | William Choi-Kim</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta name="description" content="webdev, writer, artist" />
+	<link rel="stylesheet" type="text/css" href="../style.css" />
+	<link rel="icon" href="../assets/imgs/icon.png">
+</head>
+<body>
+	<div class="content">
+	<div>
+        <a href="/">Home</a>
+		<h1>SmilesDB</h1>
+        <p>A SMILES-first molecular database</p>
+        <a href="https://smilesdb.org">smilesdb.org</a>
+        <img class="preview" src="../assets/imgs/sdb.png">
+        <h2>Motivation</h2>
+        <p>SmilesDB is a product of need - while working on a research program at the Wolfram Emerging Leaders Program, I found that there were no readily accessible online SMILES databases.</p>
+        <p>There were, of course, databases with SMILES strings, but it was difficult to query these in large quantities (quickly).</p>
+        <h2>Technical Details</h2>
+        <p>SmilesDB runs on <a href="https://render.com/">Render</a> servers and is written on the Flask microframework. Web scraping was done in advance and used BeautifulSoup4 and Javascript snippets injected into downloaded HTML.</p>
+        <p>The API is <a href="https://smilesdb.org/docs">documented</a> and open source.</p>
+        <h2>Challenges</h2>
+        <p>The initial scraping was a challenge, as I sourced molecules from BindingDB - a site that uses dynamic loading for its tables. The ultimate solution involved javascript injected into the page.</p>
+	</div>
+	</div>
+</body>
+</html>
