@@ -27,6 +27,7 @@ body {
 	padding: 10px;
 	padding-left: 25px;
 	box-sizing: border-box;
+	mix-blend-mode: difference;
 }
 
 h1, h2, h3 {
@@ -58,8 +59,7 @@ h2::before {
 	top: 0;
 	width: 100vw;
 	height: 100vh;
-	z-index: 2;
-	mix-blend-mode: difference;
+	z-index: -1;
 	filter: blur(100vmax) contrast(3) brightness(100) blur(5vmax) contrast(3);
 	-webkit-filter: blur(100vmax) contrast(3) brightness(100) blur(5vmax) contrast(3);
 }
