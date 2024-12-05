@@ -143,6 +143,12 @@ a {
 	justify-content: center;
 	align-items: center;
 }
+.projects > li > a > sub {
+	text-align: right;
+	margin-left: 15px;
+	margin-right: 10px;
+	text-decoration: underline wavy;
+}
 
 .preview {
 	max-width: 100%;
