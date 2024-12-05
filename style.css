@@ -60,8 +60,8 @@ h2::before {
 	width: 100vw;
 	height: 100vh;
 	z-index: -1;
-	filter: blur(10vmax) contrast(3) brightness(100) blur(9vmax) contrast(3);
-	-webkit-filter: blur(10vmax) contrast(3) brightness(100) blur(9vmax) contrast(3);
+	filter: blur(10vh) contrast(3) brightness(100) blur(9vh) contrast(3);
+	-webkit-filter: blur(10vh) contrast(3) brightness(100) blur(9vh) contrast(3);
 }
 
 #hover {
