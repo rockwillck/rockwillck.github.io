@@ -39,8 +39,8 @@ setInterval(animate, 50)
 
 const hov = document.getElementById("hover")
 window.addEventListener("mousemove", (e) => {
-    hov.style.left = `${e.clientX + 2}px`
-    hov.style.top = `${e.clientY + 2}px`
+    hov.style.left = `${e.clientX + 15}px`
+    hov.style.top = `${e.clientY + 10}px`
 })
 
 for (let ss of [...document.getElementsByClassName("projects")].map(x => [...x.children]).flat(Infinity)) {
