@@ -8,6 +8,8 @@ window.addEventListener("resize", (e) => {
     canvas.height = 100
 })
 
+const hov = document.getElementById("hover")
+
 centroids = []
 for (let i = 0; i < 5; i++) {
     centroids.push([(Math.random() - 0.5), [Math.random(), Math.random()], Math.random()*0.7+0.5])
@@ -34,10 +36,19 @@ function animate() {
     }
 
     theta += 0.03*Math.random() + 0.01
+
+    let hovering = false
+    for (let ss of document.getElementsByClassName("projects")) {
+        if (ss.matches(":hover")) {
+            hovering = true
+        }
+    }
+    if (!hovering) {
+        hov.style.scale = 0
+    }
 }
 setInterval(animate, 50)
 
-const hov = document.getElementById("hover")
 window.addEventListener("mousemove", (e) => {
     hov.style.left = `${e.clientX + 15}px`
     hov.style.top = `${e.clientY + 10}px`
@@ -45,11 +56,10 @@ window.addEventListener("mousemove", (e) => {
 
 for (let ss of [...document.getElementsByClassName("projects")].map(x => [...x.children]).flat(Infinity)) {
     if (ss.dataset.ss != undefined) {
-        console.log(ss.dataset.ss)
         ss.addEventListener("mouseenter", () => {
             hov.style.scale = 1
             hov.src=ss.dataset.ss
-    })
+        })
         ss.addEventListener("mouseleave", () => {
             hov.style.scale = 0
         }
