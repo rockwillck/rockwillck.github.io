@@ -4,8 +4,12 @@ canvas.width = Math.round(100*window.innerWidth/window.innerHeight)
 canvas.height = 100
 
 window.addEventListener("resize", (e) => {
+    let holder = ctx.getImageData(0, 0, canvas.width, canvas.height)
+  
     canvas.width = Math.round(100*window.innerWidth/window.innerHeight)
     canvas.height = 100
+    
+    ctx.putImageData(holder, 0, 0)
 })
 
 const hov = document.getElementById("hover")
@@ -29,7 +33,7 @@ function animate() {
                 let cy = Math.cos(theta*centroid[2])*centroid[0]+centroid[1][1]
                 powerSum += 1/((x - cx)**2 + (y - cy)**2)
             }
-            if (Math.abs(powerSum*200 - 0.5) < 0.1) {
+            if (Math.abs(powerSum*Math.sqrt(canvas.height**2 + canvas.width**2)*1.3 - 0.5) < 0.1) {
                 ctx.fillRect(x, y, 1, 1)
             }
         }
