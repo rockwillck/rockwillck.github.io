@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>SmilesDB | William Choi-Kim</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta name="description" content="webdev, writer, artist" />
+	<link rel="stylesheet" type="text/css" href="../style.css" />
+	<link rel="icon" href="../assets/imgs/icon.png">
+</head>
+<body>
+	<div class="content">
+	<div>
+        <a href="/">Home</a>
+		<h1>Cycles</h1>
+        <p>Helping every user discover their body's truth</p>
+        <a href="https://trackyourcycles.com">trackyourcycles.com</a>
+        <img class="preview" src="../assets/imgs/cycles.png">
+        <h2>Motivation</h2>
+        <p>Cycles is a project I started with a friend because we shared chronic, hard-to-treat conditions that we couldn't make heads or tails of.</p>
+        <p>I've had migraines for about as long as I can remember, and no neurologist can tell me why. But <i>maybe</i>, I thought, I could find trends and relationships by tracking everything about my life.</p>
+        <p>With Cycles, users can log all the patterns in their lives - when they eat, how much they drink, when the headaches come - and the app models future instances and searches for trends between different cycles.</p>
+        <h2>Technical Details</h2>
+        <p>For prediction, Cycles uses an autoregressive multilinear regression model. For finding trends, Cycles searches through pairs between datasets to determine monotonicity.</p>
+        <p>Cycles works like an app because it's a PWA, so it can be added to your home screen and launches in app mode rather in the browser.</p>
+        <h2>Challenges</h2>
+        <p>We faced struggles with the multiregressive model as we created the app, and the PWA architecture is still buggy on iOS devices.</p>
+	</div>
+	</div>
+</body>
+</html>
