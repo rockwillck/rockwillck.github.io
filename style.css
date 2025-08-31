@@ -42,8 +42,6 @@ h1, h2 {
 }
 
 h1 {
-	/* position:absolute;
-	padding: 0px 0px 10px 30px; */
 	font-size: 60px;
 }
 h2 {
@@ -115,7 +113,7 @@ a {
 	box-sizing: border-box;
 	flex: 1;
 	background: linear-gradient(to right, white, white 50%, black 50%, black);
-	background-size: 200% 100%;
+	background-size: 210% 100%;
 	background-position: 100%;
 	transition: 0.2s;
 	display: flex;
@@ -193,4 +191,36 @@ pre {
 	100% {
 		translate: 0 0;
 	}
+}
+
+.hero > .myname {
+	position: relative;
+	width: fit-content;
+}
+.myname > h1 {
+	width: fit-content;
+}
+.sidetag {
+	position: absolute;
+	bottom: -0.5em;
+	right: -30px;
+	rotate: -10deg;
+	transform-origin: bottom center;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	
+	background-color: rgba(68, 0, 135, 0.2);
+	padding: 10px;
+	
+	border-radius: 10px;
+	border-bottom: solid 1px rgba(255, 255, 255, 0.4);
+	border-right: solid 1px rgba(255, 255, 255, 0.2);
+	border-top: solid 1px rgba(255, 255, 255, 0.2);
+
+	max-height: fit-content;
+}
+.sidetag > a {
+	text-transform: none;
+	text-decoration: wavy underline;
+	font-size: 15px;
 }
