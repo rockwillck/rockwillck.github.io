@@ -215,7 +215,6 @@ pre {
 	border-radius: 10px;
 	border-bottom: solid 1px rgba(255, 255, 255, 0.4);
 	border-right: solid 1px rgba(255, 255, 255, 0.2);
-	border-top: solid 1px rgba(255, 255, 255, 0.2);
 
 	max-height: fit-content;
 }
@@ -223,4 +222,8 @@ pre {
 	text-transform: none;
 	text-decoration: wavy underline;
 	font-size: 15px;
+}
+.sidetag::before {
+	content: "✦";
+	padding-right: 5px;
 }
