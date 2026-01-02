@@ -20,11 +20,14 @@
         <img class="preview" src="../assets/imgs/pin.png">
 		<h2>Motivation</h2>
         <p>Hwalgi is a nonprofit that publishes student essays in order to amplify younger representation in modern discourse.</p>
+		<h2>Spec</h2>
+		<p>Hwalgi is a completely custom, ground-up publishing platform and CMS. It's optimized to run at the lowest possible cost and has a focus on accessibility and usability for non-technical users. It includes a frontend for published articles, a submission portal for both submitting works and checking on the status of submissions, and a frontend for reviewers to view, edit, approve, and reject submissions and published works.</p>
 		<h2>Technical Details</h2>
-		<p>Hwalgi is submission based, so I used Google Forms and Google Sheets (rewriting the frontend for Google Forms to send POST requests to the Google endpoint) to collect submissions. They are then manually reviewed, and the site scrapes the published spreadsheet periodically to get updates.</p>
+		<p>Hwalgi is submission-based, and those submissions go through a form that then forwards those POST requests to a Google Sheets endpoint. There's some AppScript work on the Google Sheets side, alongside more crude formula work. Certain parts of the spreadsheet are then posted to an online endpoint that the frontend fetches from and processes.</p>
 		<p>Pine is not submission based, so it uses a Python script and Github Actions to convert a custom markdown-like file format to templated HTML on commit.</p>
 		<h2>Challenges</h2>
 		<p>Finding brand unity between the two sites without making them indistinguishable was an interesting exercise in what to keep and what to change.</p>
+		<p>With Hwalgi, finding a way to use tools like Google Sheets and Google Forms for more complicated and programatic tasks than they were intended proved difficult, especially with caching and limitations on the side of Google Sheets. Ultimately, using these products helped keep operational costs down.</p>
 	</div>
 </body>
 </html>
